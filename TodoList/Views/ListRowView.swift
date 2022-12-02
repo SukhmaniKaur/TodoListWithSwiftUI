@@ -8,13 +8,19 @@
 import SwiftUI
 
 struct ListRowView: View {
+    
+    let title: String
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Image(systemName: "checkmark.circle")
+            Text(title)
+            Spacer()
+        }
     }
 }
 
 struct ListRowView_Previews: PreviewProvider {
     static var previews: some View {
-        ListRowView()
+        ListRowView(title: "This is the first title!")
     }
 }
