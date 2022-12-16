@@ -21,7 +21,7 @@ struct AddView: View {
                 TextField("Type something here...", text: $textfieldString)
                     .padding(.horizontal)
                     .frame(height: 55)
-                .background(Color.gray).opacity(0.45)
+                    .background(Color(UIColor.secondarySystemBackground))
                 .cornerRadius(10)
                 Button {
                     saveButtonPressed()
@@ -31,10 +31,9 @@ struct AddView: View {
                         .font(.headline)
                         .frame(height: 55)
                         .frame(maxWidth: .infinity)
-                        .background(.blue)
+                        .background(Color.accentColor)
                         .cornerRadius(10)
                 }
-
             }
             .padding(14)
         }
